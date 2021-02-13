@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{!-- Font-awesome link --}}
+    {{>links}}
+
+</head>
+
+<body>
+    {{>navbar}}
+
+    {{!-- main header --}}
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    {{!-- left side --}}
+                    <div class="col-md-6 col-12 main_header_left align-item-center">
+                        <p>Welcome to the Weather App</p>
+                        <h1>Get the latest Weather reports </h1>
+                        <a href="/weather"><button>check now</button></a>
+                    </div>
+
+                    {{!-- right side --}}
+                    <div class="col-md-6 col-12 main_header_right ">
+                        <figure>
+                            <img src="/images/giphy.gif" alt="aboutimg">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- FOOTER --}}
+    {{>footer}}
+
+</body>
+
+</html>
